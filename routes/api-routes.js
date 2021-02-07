@@ -36,4 +36,13 @@ app.put("/api/workouts/:id", (req, res) => {
           res.json(404);
       })
 });
+app.get("/api/workouts/range", (req, res) => {
+    Workout.find({}).then(function(data) {
+        res.json(data);
+      })
+      .catch(function(err){
+          console.log(err);
+          res.json(404);
+      })
+});
 }
