@@ -1,12 +1,21 @@
-const { db } = require("../models/workout");
+const { Workout } = require("../models");
 
-const app = express();
+// const express = require("express");
 
 module.exports = function(app){
 
 
-app.get("/api/workouts", (res, req) => {
-    db.find({}).then(function(data) {
+app.get("/api/workouts", (req, res) => {
+    Workout.find().then ((data) => {
+        res.json(data);
+      })
+      .catch((err) => {
+          console.log(err);
+          res.json(404);
+      })
+});
+app.post("/api/workouts", (req, res) => {
+    Workout.create({}).then(function(data) {
         res.json(data);
       })
       .catch(function(err){
@@ -14,8 +23,12 @@ app.get("/api/workouts", (res, req) => {
           res.json(404);
       })
 });
-app.post("/api/workouts", (res, req) => {
-    db.create({}).then(function(data) {
+app.put("/api/workouts/:id", (req, res) => {
+    console.log("testing")
+    const id = req.params.id;
+    const workout = req.body;
+    Workout.findByIdAndUpdate(id, { $push: {exercises: workout}} , {new: true} ).then(function(data) {
+        console.log("tester")
         res.json(data);
       })
       .catch(function(err){
