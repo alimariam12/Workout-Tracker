@@ -36,6 +36,9 @@
 <img width="1437" alt="Screen Shot 2021-02-08 at 10 49 18 PM" src="https://user-images.githubusercontent.com/71665063/107317251-f03e8a80-6a5f-11eb-930a-406b6313fd3f.png">
 <img width="1428" alt="Screen Shot 2021-02-08 at 10 48 52 PM" src="https://user-images.githubusercontent.com/71665063/107317259-f2a0e480-6a5f-11eb-8c63-4a384b58c29b.png">
   
+  ## Links
+  1. Heroku: https://immense-journey-46274.herokuapp.com/
+  2. Repository: https://github.com/alimariam12/Workout-Tracker
   ## License
   ![badge](https://img.shields.io/badge/license-MIT-green)
   <br />
