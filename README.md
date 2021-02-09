@@ -7,6 +7,7 @@
   - [Installation](#installation)
   - [Technology](#technology)
   - [Usage](#usage)
+  - [Links](#links)
   - [License](#license)
   - [Questions](#questions)
   
@@ -39,6 +40,7 @@
   ## Links
   1. Heroku: https://immense-journey-46274.herokuapp.com/
   2. Repository: https://github.com/alimariam12/Workout-Tracker
+  
   ## License
   ![badge](https://img.shields.io/badge/license-MIT-green)
   <br />
